@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 2716,
-  "expoServerNgrokUrl": "https://wx-mfv.anonymous.mobiles.exp.direct",
-  "packagerNgrokUrl": "https://packager.wx-mfv.anonymous.mobiles.exp.direct",
-  "ngrokPid": 25452,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }
