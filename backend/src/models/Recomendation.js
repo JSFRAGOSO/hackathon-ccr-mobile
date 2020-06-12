@@ -4,6 +4,7 @@ const RecomendationSchema = new Schema({
   name:String,
   address:String,
   key_words:[String],
+  link:String,
   observation:String,
   
 },{

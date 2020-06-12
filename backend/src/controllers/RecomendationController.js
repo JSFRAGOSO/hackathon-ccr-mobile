@@ -7,7 +7,7 @@ module.exports = {
     },
     
     async store(req,res){
-        const { name, address, key_words, observation } = req.body;
+        const { name, address, key_words,link, observation } = req.body;
     
         const arrayKeyWords = key_words.split(',').map(word => word.trim());
 
@@ -15,6 +15,7 @@ module.exports = {
           name,
           address,
           key_words: arrayKeyWords,
+          link,
           observation,
         });
 
