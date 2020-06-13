@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Main from './pages/Main';
-import Profile from './pages/Profile';
+import Main from './pages/Reminders';
+import Recomendations from './pages/Recomendations/index';
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -9,10 +9,9 @@ function Routes() {
     <Stack.Navigator       
       screenOptions={{
       headerShown: false,
-      cardStyle: { backgroundColor: '#e5e6f0' },
     }}>
       <Stack.Screen name="Main" component={Main} />
-      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Recomendations" component={Recomendations} />
     </Stack.Navigator>
   );
 }
