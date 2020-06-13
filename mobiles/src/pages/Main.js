@@ -103,13 +103,6 @@ const styles = StyleSheet.create({
     borderTopColor:'#fff'
   }
 })
-/*
-  #e5e6f0
-    border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  
-  border-top: 20px solid #f00;
-*/
 export default Main
 
 

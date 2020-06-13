@@ -14,7 +14,7 @@ module.exports = {
         wordsArray.forEach(word => {
           const containWord = recomendation.key_words.find(keyWord => 
             {
-            return word.toUpperCase() === keyWord.toUpperCase()
+              return word.toUpperCase() === keyWord.toUpperCase()
             }
             );
           

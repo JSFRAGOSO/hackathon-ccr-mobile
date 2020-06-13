@@ -5,11 +5,8 @@ import { KeyboardAvoidingView} from 'react-native';
 
 export default function App() {
   return (
-    
-    <KeyboardAvoidingView style={{ flex: 1 }} behavior={"padding"} >
       <NavigationContainer>
         <Routes/>
       </NavigationContainer>
-    </KeyboardAvoidingView>
   );
 }
