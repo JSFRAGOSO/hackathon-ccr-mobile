@@ -1,12 +1,39 @@
 import styled, { css } from 'styled-components/native';
 
+export const HeaderContainer = styled.View`
+  background-color:#333333;
+  flex-direction:row;
+  align-items:center;
+  padding-top:30px;
+`;
+
+export const Character = styled.Image`
+  width:55px;
+  height:55px;
+  border-radius: 25px;
+  margin-left:7px;
+
+`;
+
+export const TextLogo = styled.Text`
+  color:#C53737;
+  font-size:27px;
+  font-weight:bold;
+  font-style: italic;
+  border-radius: 77px;
+  margin-left:23px;
+  margin-bottom:10px;
+`;
+
 
 export const Container = styled.View`
   flex: 1;
   justify-content:space-between;
   padding-top:30px;
   padding-bottom:10px;
+  background-color: #333333;
 `;
+
 
 export const GoBackButton = styled.TouchableOpacity`
   flex-direction:row;
@@ -22,12 +49,13 @@ export const GoBackButton = styled.TouchableOpacity`
 
 export const GoBackText = styled.Text`
   font-weight:bold;
+  color:#fff;
   font-size:21px;
 `;
 
 export const MessageContainter = styled.ScrollView`
   flex:1;
-  background-color: #e5e6f0;
+  background-color: #444444;
 `
 
 export const Message = styled.View`
@@ -61,10 +89,10 @@ export const MessageLink = styled.Text`
 
 export const SearchForm = styled.KeyboardAvoidingView`
   flex-direction:row;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
-  padding: 0 10px 0 10px;
-  background-color: #e5e6f0;
+  padding: 15px 10px 0 10px;
+  background-color: #333333;
 `;
 
 export const SearchInput = styled.TextInput`
@@ -83,7 +111,7 @@ export const SendButton = styled.TouchableOpacity`
   align-items:center;
   justify-content:center;
   border-radius:25px;
-  background-color:#019777;
+  background-color:#C53737;
   margin-left:15px;
   margin-bottom:20px;
 `;

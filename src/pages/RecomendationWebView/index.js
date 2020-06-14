@@ -11,7 +11,7 @@ export default function RecomendationWebView({navigation}) {
   return (
     <Container>
       <GoBackButton onPress={() => navigation.goBack()} >
-        <AntDesign name="back" size={24} color="black" />
+        <AntDesign name="back" size={24} color="white" />
         <GoBackText>Voltar</GoBackText>
       </GoBackButton>
       <WebView source={{ uri: 'https://hackathon-ccr-frontend.herokuapp.com/recomendations' }} style={{ flex: 1 }} />

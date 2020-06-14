@@ -1,14 +1,27 @@
 import styled from 'styled-components/native';
 
+
+export const TextLogo = styled.Text`
+  color:#C53737;
+  font-size:27px;
+  font-weight:bold;
+  font-style: italic;
+  border-radius: 77px;
+  margin-left:23px;
+  margin-bottom:10px;
+`;
+
 export const Container = styled.View`
   flex: 1;
   justify-content:space-between;
   padding-top:30px;
   padding-bottom:10px;
+  background-color:#333333;
 `;
 
 export const HeaderTitle = styled.Text`
   font-weight:bold;
+  color:#fff;
   font-size:21px;
   margin-bottom:20px;
   margin-left:10px;
@@ -16,7 +29,7 @@ export const HeaderTitle = styled.Text`
 
 export const MessageContainter = styled.ScrollView`
   flex:1;
-  background-color: #e5e6f0;
+  background-color: #333333;
 `
 
 export const Message = styled.View`
@@ -63,18 +76,3 @@ export const Hours = styled.Text`
   margin-top:5px;
   color: #666;
 `
-export const Footer = styled.KeyboardAvoidingView`
-  align-items:center;
-  flex-direction:row;
-  justify-content:space-between;
-  background-color: #e5e6f0;
-`;
-
-export const ChatButton = styled.TouchableOpacity`
-  height:70px;
-  width:70px;
-  border-radius:14px;
-  justify-content:center;
-  align-items:center;
-  background-color:#00ff40
-`;

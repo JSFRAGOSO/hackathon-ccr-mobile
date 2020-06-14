@@ -1,10 +1,10 @@
 {
   "expoServerPort": 19000,
-  "expoServerNgrokUrl": "https://wx-mfv.anonymous.hackathon-ccr-mobile.exp.direct",
-  "packagerNgrokUrl": "https://packager.wx-mfv.anonymous.hackathon-ccr-mobile.exp.direct",
-  "ngrokPid": 31116,
+  "expoServerNgrokUrl": "https://cb-4s3.anonymous.hackathon-ccr-mobile.exp.direct",
+  "packagerNgrokUrl": "https://packager.cb-4s3.anonymous.hackathon-ccr-mobile.exp.direct",
+  "ngrokPid": 26172,
   "packagerPort": 19001,
-  "packagerPid": 21088,
+  "packagerPid": 24424,
   "webpackServerPort": null,
   "devToolsPort": 19002
 }

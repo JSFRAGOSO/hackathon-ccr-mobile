@@ -2,11 +2,12 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Reminders from './pages/Reminders';
 import Main from './pages/Main';
-import Recomendations from './pages/Recomendations/index';
-import RecomendationWebView from './pages/RecomendationWebView/index';
-import Intro from './pages/Intro/index';
-import Explanation from './pages/Explanation/index';
-import Important from './pages/Important/index';
+import Recomendations from './pages/Recomendations';
+import RecomendationNews from './pages/RecomendationNews';
+import RecomendationWebView from './pages/RecomendationWebView';
+import Intro from './pages/Intro';
+import Explanation from './pages/Explanation';
+import Important from './pages/Important';
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -19,7 +20,9 @@ function Routes() {
       <Stack.Screen name="Explanation" component={Explanation} />
       <Stack.Screen name="Important" component={Important} />
       <Stack.Screen name="Main" component={Main} />
+      <Stack.Screen name="Reminders" component={Reminders} />
       <Stack.Screen name="Recomendations" component={Recomendations} />
+      <Stack.Screen name="RecomendationNews" component={RecomendationNews} />
       <Stack.Screen name="RecomendationWebView" component={RecomendationWebView} />
       
     </Stack.Navigator>

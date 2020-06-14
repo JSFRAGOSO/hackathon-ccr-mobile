@@ -7,7 +7,6 @@ import truckButton from '../../assets/truckButton.png';
 import insideTruckButton from '../../assets/insideTruckButton.png';
 
 import {
-  Container,
   ChatContainer,
   Character,
   ChatInputContainer,
@@ -33,30 +32,30 @@ const Main = ({navigation}) => {
 
   return (
     <>
-      <HeaderContainer>
-        <TextLogo>CHAPA</TextLogo>
-      </HeaderContainer>
+    <HeaderContainer>
+      <TextLogo>CHAPA</TextLogo>
+    </HeaderContainer>
       <ChatContainer>
-      <ChatInputContainer>
+      <ChatInputContainer onPress={() => navigation.navigate('Recomendations')}>
         <Character source={character}/>
         <TextLineContainer>
-          <InputMessageText>Pergunte ao Chapapa</InputMessageText>
+          <InputMessageText>Pergunte ao Chapa</InputMessageText>
         </TextLineContainer>
       </ChatInputContainer>
-      <AudioButton>
+      <AudioButton onPress={() => navigation.navigate('Recomendations')}>
         <Fontisto name="mic" size={24} color="white" />
       </AudioButton>
       </ChatContainer>
 
       <MainContainer>
         <DoubleButtonContainer>
-          <ImageButtons>
+          <ImageButtons onPress={() => navigation.navigate('Reminders')}>
             <ButtonImage source={armButton}/>
               <AbsoluteView>
                 <ButtonText>Parceiro, você preza pela sua saúde?</ButtonText>
               </AbsoluteView>
           </ImageButtons>
-          <ImageButtons>
+          <ImageButtons onPress={() => navigation.navigate('RecomendationNews')}>
             <ButtonImage source={truckButton}/>
               <AbsoluteView>
                 <ButtonText>Recomendações para comer, dormir, abastecer dos irmãos de estrada</ButtonText>
@@ -64,7 +63,7 @@ const Main = ({navigation}) => {
           </ImageButtons>
         </DoubleButtonContainer>
         <DoubleButtonContainer>
-          <ImageButtons>
+          <ImageButtons onPress={() => navigation.navigate('RecomendationWebView')}>
             <ButtonImage source={insideTruckButton}/>
               <AbsoluteView>
                 <ButtonText>Faça as suas recomendações para colegas de estrada</ButtonText>
@@ -80,13 +79,11 @@ const Main = ({navigation}) => {
               <MessageText>Emergência de Saúde</MessageText>
             </EmergencyButton>
             <HelpLinkButton>
-              <LinkText>O que é isso</LinkText>
+              <LinkText>O que é isso?</LinkText>
             </HelpLinkButton>
           </EmergencyButtonsContainer>
         </DoubleButtonContainer>
       </MainContainer>
-      <Container>
-      </Container>
     </>
   );
 };

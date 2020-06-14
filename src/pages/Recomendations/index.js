@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Keyboard, Linking } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; 
+import character from '../../assets/characterZoom.png';
 import api from '../../services/api';
 import { Container,
          MessageContainter,
@@ -13,8 +14,9 @@ import { Container,
          SendButton,
          ArrowRightDownBlue,
          ArrowLeftUpWhite,
-         GoBackButton,
-         GoBackText,
+         HeaderContainer,
+         Character,
+         TextLogo
         } from './styles';
 
 const Recomendations = ({navigation}) => {
@@ -30,11 +32,12 @@ const Recomendations = ({navigation}) => {
   }
 
   return (
+    <>
+    <HeaderContainer>
+      <Character source={character}/>
+      <TextLogo>CHAPA</TextLogo>
+    </HeaderContainer>
     <Container>
-      <GoBackButton onPress={() => navigation.goBack()} >
-        <AntDesign name="back" size={24} color="black" />
-        <GoBackText>Voltar</GoBackText>
-      </GoBackButton>
       <MessageContainter 
          ref={ref => {this.scrollView = ref}}
          onContentSizeChange={() => this.scrollView.scrollToEnd({animated: true})}
@@ -67,7 +70,14 @@ const Recomendations = ({navigation}) => {
                 <ArrowLeftUpWhite/>
                 </Message>
               )
-            } else {
+            } else if(message.message){
+              return (<Message key={message.transactionId} received>
+                <MessageText>
+                  {message.message}
+                </MessageText>
+                <ArrowLeftUpWhite/>
+              </Message>)
+            }else {
             return (
               <Message key={message.id} sent>
                 <MessageText>
@@ -94,6 +104,7 @@ const Recomendations = ({navigation}) => {
         </SendButton>
       </SearchForm>
     </Container>
+    </>
   );
 };
 
