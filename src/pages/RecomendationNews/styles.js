@@ -65,6 +65,6 @@ export const MessageTitle = styled.Text`
 export const MessageLink = styled.Text`
   font-weight:bold;
   font-size:18px;
-  color:#0000EE;
+  color:#fff;
   text-decoration:underline;
 `;

@@ -85,13 +85,13 @@ export const InputMessageText = styled.Text`
 
 export const MainContainer = styled.View`
   background-color:#333333;
-  padding:20px 10px 20px 10px;
+  padding:20px 20px 20px 20px;
+  flex:1;
 `;
 
 export const DoubleButtonContainer = styled.View`
   flex-direction:row;
   align-items:center;
-  justify-content:center;
   margin-top:10px;
   
 `;
@@ -99,18 +99,20 @@ export const DoubleButtonContainer = styled.View`
 export const ImageButtons = styled.TouchableOpacity`
   background: transparent;
   align-items:center;
+  margin-left:20px;
 `;
 
 export const ButtonImage = styled.Image`
-  width:200px;
-  height: 220px;
+  width:150px;
+  height: 180px;
+  border-radius:30px;
 `;
 
 export const AbsoluteView = styled.View`
   position: absolute;
   width:150px;
   top:30px;
-  left:30px;
+  left:10px;
   align-items: center;
   justify-content: center;
   background-color: transparent;
