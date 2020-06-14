@@ -47,6 +47,9 @@ const Reminders = ({navigation}) => {
         <ChatButton onPress={() => navigation.navigate('Recomendations')}>
         <FontAwesome5 name="robot" size={40} color="black" />
         </ChatButton>
+        <ChatButton onPress={() => navigation.navigate('RecomendationWebView')}>
+        <FontAwesome5 name="robot" size={40} color="white" />
+        </ChatButton>
       </Footer>
     </Container>
   );

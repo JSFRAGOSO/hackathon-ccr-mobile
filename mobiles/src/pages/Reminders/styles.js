@@ -65,6 +65,8 @@ export const Hours = styled.Text`
 `
 export const Footer = styled.KeyboardAvoidingView`
   align-items:center;
+  flex-direction:row;
+  justify-content:space-between;
   background-color: #e5e6f0;
 `;
 
