@@ -1,13 +1,15 @@
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons'; 
 import character from '../../assets/characterZoom.png';
+import logo from '../../assets/logo.png';
+
 import {
   Container,
+  Logo,
   MainContainer,
   Character,
   MessageContainer,
   MessageText,
-  TextLogo,
   EnterButton,
   ButtonText,
   HeaderContainer,
@@ -19,7 +21,7 @@ const Important = ({navigation}) => {
   return (
     <>
       <HeaderContainer>
-        <TextLogo>CHAPA</TextLogo>
+        <Logo source={logo}/>
       </HeaderContainer>
       <Container>
         <Title>Importante!</Title>

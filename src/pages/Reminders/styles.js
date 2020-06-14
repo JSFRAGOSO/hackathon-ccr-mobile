@@ -11,6 +11,13 @@ export const TextLogo = styled.Text`
   margin-bottom:10px;
 `;
 
+export const Logo = styled.Image`
+  width:110px;
+  height:40px;
+  margin-left: 19px;
+  margin-bottom: 10px;
+`;
+
 export const Container = styled.View`
   flex: 1;
   justify-content:space-between;

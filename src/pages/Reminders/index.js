@@ -1,8 +1,10 @@
 import React,{useEffect,useState} from 'react';
 import api from '../../services/api';
+import logo from '../../assets/logo.png';
 
 import { 
         TextLogo,
+        Logo,
         Container,
         MessageContainter,
         ArrowLeftUpWhite,
@@ -28,7 +30,7 @@ const Reminders = ({navigation}) => {
   return (
     <>
       <Container>
-      <TextLogo>CHAPA</TextLogo>
+      <Logo source={logo}/>
         <HeaderTitle>Seus lembretes do dia</HeaderTitle>
         <MessageContainter>
           {reminders.map(reminder => (

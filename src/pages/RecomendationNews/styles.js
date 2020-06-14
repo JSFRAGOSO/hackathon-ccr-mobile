@@ -49,8 +49,7 @@ export const Message = styled.View`
 `
 
 export const MessageText = styled.Text`
-  font-weight:bold;
-  color:#ffffff;
+  color:#999999;
   font-size:18px;
   
 `;
@@ -64,6 +63,8 @@ export const MessageTitle = styled.Text`
 
 export const MessageLink = styled.Text`
   font-weight:bold;
+  margin-top:15px;
+  margin-bottom:15px;
   font-size:18px;
   color:#fff;
   text-decoration:underline;

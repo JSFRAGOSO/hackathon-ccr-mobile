@@ -16,7 +16,8 @@ import { Container,
          ArrowLeftUpWhite,
          HeaderContainer,
          Character,
-         TextLogo
+         TextLogo,
+         MessageWhiteText,
         } from './styles';
 
 const Recomendations = ({navigation}) => {
@@ -45,7 +46,7 @@ const Recomendations = ({navigation}) => {
         <Message>
           <ArrowLeftUpWhite/>
           <MessageText>
-          Olá, eu sou o Chapa, como eu posso te ajudar hoje?
+            Olá, eu sou o Chapa, como eu posso te ajudar hoje?
           </MessageText>
         </Message>
         {
@@ -80,9 +81,9 @@ const Recomendations = ({navigation}) => {
             }else {
             return (
               <Message key={message.id} sent>
-                <MessageText>
+                <MessageWhiteText>
                   {message.text}
-                </MessageText>
+                </MessageWhiteText>
                 <ArrowRightDownBlue/>
               </Message>
             )

@@ -13,14 +13,57 @@ export const HeaderContainer = styled.View`
   padding-top:30px;
 `;
 
-export const TextLogo = styled.Text`
-  color:#C53737;
-  font-size:27px;
+export const Modal = styled.Modal`
+  height:10px;
+  width:20px;
+  align-items:center;
+  justify-content:center;
+`;
+
+export const ModalView = styled.View`
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-top:50%;
+    align-items: center;
+`;
+
+export const ModalViewTitle = styled.Text`
+  color:#262222;
+  width:190px;
+  font-size:18px;
   font-weight:bold;
-  font-style: italic;
-  border-radius: 77px;
-  margin-left:23px;
+  margin-left:5px;
+`;
+
+export const ModalViewText = styled.Text`
+  color:#333;
+  width:200px;
+  font-size:16px;
+  margin-left:30px;
   margin-bottom:10px;
+`;
+
+export const CloseModalButton = styled.TouchableOpacity`
+  border-radius: 20px;
+  background-color:#fff;
+  background-color:#333;
+  width:50px;
+  height:20px;
+  align-items:center;
+  justify-content:center;
+`;
+
+export const CloseModalButtonText = styled.Text`
+  border-radius: 20px;
+  color:#fff;
+`;
+
+export const Logo = styled.Image`
+  width:110px;
+  height:40px;
+  margin-left: 19px;
+  margin-bottom: 10px;
 `;
 
 export const Title = styled.Text`
@@ -92,7 +135,7 @@ export const MainContainer = styled.View`
 export const DoubleButtonContainer = styled.View`
   flex-direction:row;
   align-items:center;
-  margin-top:10px;
+  margin-top:20px;
   
 `;
 
@@ -110,9 +153,9 @@ export const ButtonImage = styled.Image`
 
 export const AbsoluteView = styled.View`
   position: absolute;
-  width:150px;
+  width:130px;
   top:30px;
-  left:10px;
+  left:15px;
   align-items: center;
   justify-content: center;
   background-color: transparent;
@@ -123,8 +166,9 @@ export const EmergencyButtonsContainer = styled.View`
   align-items:center;
   justify-content:space-between;
   width:200px;
-  height: 220px;
+  height: 170px;
 `;
+
 export const EmergencyButton = styled.TouchableOpacity`
   background-color:#ffffff;
   height:66px;
@@ -133,6 +177,7 @@ export const EmergencyButton = styled.TouchableOpacity`
   align-items:center;
   justify-content:center;
   border-radius:10px;
+  margin-bottom:10px;
   padding: 5px 5px 10px 10px;  
 `;
 
@@ -141,7 +186,6 @@ export const HelpLinkButton = styled.TouchableOpacity`
   height:66px;
   width:130px;
   align-items:center;
-  justify-content:center;
   border-radius:10px;
   padding: 5px 5px 10px 5px;  
 `;
@@ -151,7 +195,6 @@ export const LinkText = styled.Text`
   width:100px;
   font-size:16px;
   text-decoration: underline;
-  margin-bottom:45px;
 `;
 
 export const MessageText = styled.Text`

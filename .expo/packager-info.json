@@ -1,10 +1,10 @@
 {
-  "expoServerPort": 19000,
-  "expoServerNgrokUrl": "https://cb-4s3.jsfragoso.hackathon-ccr-mobile.exp.direct",
-  "packagerNgrokUrl": "https://packager.cb-4s3.jsfragoso.hackathon-ccr-mobile.exp.direct",
-  "ngrokPid": 25348,
-  "packagerPort": 19001,
-  "packagerPid": 25996,
+  "expoServerPort": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "packagerPort": null,
+  "packagerPid": null,
   "webpackServerPort": null,
   "devToolsPort": 19002
 }

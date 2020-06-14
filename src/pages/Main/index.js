@@ -1,12 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Fontisto, Octicons, FontAwesome5 } from '@expo/vector-icons'; 
 
 import character from '../../assets/characterZoom.png';
 import armButton from '../../assets/armButton.png';
 import truckButton from '../../assets/truckButton.png';
 import insideTruckButton from '../../assets/insideTruckButton.png';
+import logo from '../../assets/logo.png';
 
 import {
+  Logo,
   ChatContainer,
   Character,
   ChatInputContainer,
@@ -23,18 +25,24 @@ import {
   HelpLinkButton,
   LinkText,
   MessageText,
-  TextLogo,
   HeaderContainer,
   InputMessageText,
+  CloseModalButton,
+  CloseModalButtonText,
+  ModalView,
+  ModalViewText,
+  ModalViewTitle,
+  Modal,
  } from './styles';
 
 const Main = ({navigation}) => {
+  const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <>
-    <HeaderContainer>
-      <TextLogo>CHAPA</TextLogo>
-    </HeaderContainer>
+      <HeaderContainer>
+        <Logo source={logo}/>
+      </HeaderContainer>
       <ChatContainer>
       <ChatInputContainer onPress={() => navigation.navigate('Recomendations')}>
         <Character source={character}/>
@@ -62,6 +70,22 @@ const Main = ({navigation}) => {
               </AbsoluteView>
           </ImageButtons>
         </DoubleButtonContainer>
+        <Modal
+           animationType="slide"
+           transparent={true}
+           visible={modalVisible}
+        >
+          <ModalView>
+            <ModalViewTitle>O que faz esse botão?</ModalViewTitle>
+            <ModalViewText>Liga para a central de emergência da Rodovia</ModalViewText>
+            <CloseModalButton onPress={() => {
+                setModalVisible(!modalVisible);
+              }}>
+              <CloseModalButtonText>OK</CloseModalButtonText>
+            </CloseModalButton>
+          </ModalView>
+
+        </Modal>
         <DoubleButtonContainer>
           <ImageButtons onPress={() => navigation.navigate('RecomendationWebView')}>
             <ButtonImage source={insideTruckButton}/>
@@ -78,7 +102,9 @@ const Main = ({navigation}) => {
               <FontAwesome5 name="ambulance" size={20} color="#C53737" />
               <MessageText>Emergência de Saúde</MessageText>
             </EmergencyButton>
-            <HelpLinkButton>
+            <HelpLinkButton  onPress={() => {
+                setModalVisible(true);
+             }}>
               <LinkText>O que é isso?</LinkText>
             </HelpLinkButton>
           </EmergencyButtonsContainer>

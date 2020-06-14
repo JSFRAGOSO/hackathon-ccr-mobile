@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import { AntDesign } from '@expo/vector-icons'; 
+import { FontAwesome } from '@expo/vector-icons'; 
+
 import character from '../../assets/characterZoom.png';
 import api from '../../services/api';
 import {GoBackButton, GoBackText, HeaderContainer, Character,} from '../Recomendations/styles';
@@ -31,7 +32,7 @@ const RecomendationNews = ({navigation}) => {
     <>
       <HeaderContainer>
         <GoBackButton onPress={() => navigation.goBack()} >
-          <AntDesign name="back" size={24} color="white" />
+          <FontAwesome name="chevron-left" size={24} color="white" />
           <GoBackText>Voltar</GoBackText>
         </GoBackButton>
           <HeaderTitle>Recomendações</HeaderTitle>

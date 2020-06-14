@@ -13,15 +13,11 @@ export const HeaderContainer = styled.View`
   padding-top:30px;
 `;
 
-export const TextLogo = styled.Text`
-  color:#C53737;
-  font-size:27px;
-  font-weight:bold;
-  font-style: italic;
-  border-radius: 77px;
-  margin-left:23px;
+export const Logo = styled.Image`
+  width:110px;
+  height:40px;
+  margin-left: 19px;
 `;
-
 export const Title = styled.Text`
   color:#FFFFFF;
   margin-top:10px;

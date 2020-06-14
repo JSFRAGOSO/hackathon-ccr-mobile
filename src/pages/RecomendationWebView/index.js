@@ -1,6 +1,6 @@
 import React from 'react';
 import { WebView } from 'react-native-webview';
-import { AntDesign } from '@expo/vector-icons'; 
+import { FontAwesome } from '@expo/vector-icons'; 
 import {
   Container,
   GoBackButton,
@@ -11,7 +11,7 @@ export default function RecomendationWebView({navigation}) {
   return (
     <Container>
       <GoBackButton onPress={() => navigation.goBack()} >
-        <AntDesign name="back" size={24} color="white" />
+        <FontAwesome name="chevron-left" size={24} color="white" />
         <GoBackText>Voltar</GoBackText>
       </GoBackButton>
       <WebView source={{ uri: 'https://hackathon-ccr-frontend.herokuapp.com/recomendations' }} style={{ flex: 1 }} />

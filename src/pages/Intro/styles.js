@@ -33,6 +33,12 @@ export const TextLogo = styled.Text`
   border-radius: 77px;
 `;
 
+export const Logo = styled.Image`
+  width:110px;
+  height:40px;
+  margin-top: 10px;
+`;
+
 export const ExplanationText = styled.Text`
   color:#FFFFFF;
   font-size:14px;

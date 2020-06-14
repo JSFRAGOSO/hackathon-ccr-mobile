@@ -51,6 +51,8 @@ export const GoBackText = styled.Text`
   font-weight:bold;
   color:#fff;
   font-size:21px;
+
+  margin-left:10px;
 `;
 
 export const MessageContainter = styled.ScrollView`
@@ -70,13 +72,18 @@ export const Message = styled.View`
   ${props =>
     props.sent &&
     css`
-      background-color: #34B7F1;
+      background-color: #333333;
       margin-left:50px;
     `}
 `
 
 export const MessageText = styled.Text`
   font-weight:bold;
+  font-size:18px;
+`;
+export const MessageWhiteText = styled.Text`
+  font-weight:bold;
+  color:#fff;
   font-size:18px;
 `;
 
@@ -129,7 +136,7 @@ export const ArrowRightDownBlue = styled.View`
   border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: transparent;
-  border-bottom-color: #34B7F1;
+  border-bottom-color: #333333;
 `;
 
 export const ArrowLeftUpWhite = styled.View`
